@@ -288,6 +288,26 @@ footer.site{padding:56px 0 40px;border-top:1px solid var(--hair);margin-top:clam
 :root[data-theme="light"] .theme-toggle .sun{display:none}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .theme-toggle .moon{display:none}}
 @media (prefers-color-scheme:light){:root:not([data-theme="dark"]) .theme-toggle .sun{display:none}}
+
+/* ---- dark-mode fix: green-filled buttons must NOT use --ink as background.
+   --ink flips to near-white in dark mode (it's the text colour), which made these
+   render as blank white pills. Repaint them with a visible green in dark mode. ---- */
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]) .btn-green,
+  :root:not([data-theme="light"]) .follow-btn,
+  :root:not([data-theme="light"]) .channel .ch-ic,
+  :root:not([data-theme="light"]) .faq details[open] summary .plus,
+  :root:not([data-theme="light"]) .soc:hover{background:#2E845C}
+  :root:not([data-theme="light"]) .btn-green:hover,
+  :root:not([data-theme="light"]) .follow-btn:hover{background:#38A06E}
+}
+:root[data-theme="dark"] .btn-green,
+:root[data-theme="dark"] .follow-btn,
+:root[data-theme="dark"] .channel .ch-ic,
+:root[data-theme="dark"] .faq details[open] summary .plus,
+:root[data-theme="dark"] .soc:hover{background:#2E845C}
+:root[data-theme="dark"] .btn-green:hover,
+:root[data-theme="dark"] .follow-btn:hover{background:#38A06E}
 </style>
 </head>
 <body id="top">
