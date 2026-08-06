@@ -4,13 +4,13 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Swapaya — Snap it. Swap it. We're building a local swap marketplace.</title>
-<meta name="description" content="Your cupboards are full of things you don't use; your neighbours have things you'd love. We're building Swapaya — a calm, local way to swap them. No money, no shops, no landfill. Building in public in London. Join the waitlist and follow the build." />
+<meta name="description" content="Your cupboards are full of stuff you never use; someone nearby wants exactly that. Swap it for something you actually want — no money, no prices, no waste. Launching in London. Join the Swapaya waitlist." />
 
 <!-- Open Graph / social share cards -->
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Swapaya" />
 <meta property="og:title" content="Swapaya — Snap it. Swap it." />
-<meta property="og:description" content="We're building a calm, local way to swap the things you're done with for things you actually want. No money, no shops, no landfill. Building in public in London — join the waitlist and follow the build." />
+<meta property="og:description" content="Swap the stuff you don't use for stuff you do — no money, no prices, no waste. Launching in London. Join the Swapaya waitlist." />
 <meta property="og:url" content="https://swapaya.com" />
 <meta property="og:image" content="https://swapaya.com/og.png" />
 <meta property="og:image:width" content="1200" />
@@ -18,6 +18,9 @@
 <meta property="og:image:alt" content="Swapaya — Snap it. Swap it. A calm, local way to swap." />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="https://swapaya.com/og.png" />
+<!-- ⚠️ LAUNCH CHECKLIST: this holding page is set to noindex,nofollow so Google won't index the temporary
+     pre-launch page. REMOVE the robots meta on the line below the day you go public, or the site can't be indexed. -->
+<meta name="robots" content="noindex,nofollow" />
 <meta name="theme-color" content="#0D3D2C" />
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='26' fill='%230D3D2C'/%3E%3Ctext x='24' y='70' font-family='system-ui,-apple-system,Segoe UI,Roboto,sans-serif' font-weight='800' font-size='58' letter-spacing='-3' fill='%23FAFAF8'%3Es%3C/text%3E%3Ccircle cx='63' cy='63' r='9.5' fill='%23FF7A00'/%3E%3C/svg%3E" />
 
@@ -156,6 +159,10 @@ header.site.scrolled{border-bottom-color:var(--hair)}
 .wl-msg.err{background:var(--tint-peach);color:var(--ink)}
 .wl-msg .ic{flex:none;width:20px;height:20px;margin-top:1px}
 .wl-msg a{font-weight:700;text-decoration:underline;text-underline-offset:3px}
+.wl-msg .share-btn{display:inline-flex;align-items:center;gap:7px;margin-top:8px;padding:8px 15px;border-radius:var(--r-pill);
+  border:1.5px solid currentColor;background:transparent;color:inherit;font-family:var(--sans);font-weight:700;font-size:13.5px;cursor:pointer;transition:opacity .15s}
+.wl-msg .share-btn:hover{opacity:.72}
+.wl-msg .share-btn svg{width:15px;height:15px}
 
 /* ---------- build-in-public founder card (hero right) ---------- */
 .builder-card{background:var(--surface);border:1px solid var(--hair);border-radius:var(--r-lg);
@@ -320,8 +327,7 @@ footer.site{padding:56px 0 40px;border-top:1px solid var(--hair);margin-top:clam
       <span class="badge-soon">Coming soon</span>
     </a>
     <nav class="nav-links" aria-label="Primary">
-      <a class="txt" href="#idea">The idea</a>
-      <a class="txt" href="#build">Follow the build</a>
+      <a class="txt" href="#idea">How it works</a>
       <a class="txt" href="#faq">FAQ</a>
       <button class="theme-toggle" id="themeToggle" aria-label="Toggle light or dark theme">
         <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg>
@@ -336,58 +342,31 @@ footer.site{padding:56px 0 40px;border-top:1px solid var(--hair);margin-top:clam
 
 <!-- ============ HERO ============ -->
 <section class="hero" id="join">
-  <div class="wrap hero-grid">
+  <div class="wrap">
     <div class="hero-copy">
       <div class="brandmark wordmark">swapaya<span class="dot">.</span></div>
-      <p class="eyebrow">Building in public · London · Coming soon</p>
+      <p class="eyebrow">Launching September 2026.</p>
       <h1>Snap it. Swap it.</h1>
-      <p class="lede">Your cupboards are full of things you don't use. Your neighbours have things you'd love. We're building a calm, local way to swap them — no money, no shops, no landfill.</p>
+      <p class="lede">Your cupboards are full of stuff you never use. Someone nearby wants exactly that. Swap it for something you actually want — no money involved.</p>
 
       <div class="pills" aria-label="What Swapaya is not">
         <span class="pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M6 6l12 12"/></svg>No fees</span>
-        <span class="pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M6 6l12 12"/></svg>No postage</span>
         <span class="pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M6 6l12 12"/></svg>No prices</span>
-        <span class="pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M6 6l12 12"/></svg>No landfill</span>
+        <span class="pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M6 6l12 12"/></svg>No waste</span>
       </div>
 
-      <form class="wl-form" data-source="hero" novalidate>
-        <div class="field">
-          <label class="hp" aria-hidden="true">Leave this empty<input type="text" name="company" tabindex="-1" autocomplete="off" /></label>
-          <input class="wl-input" type="email" name="email" inputmode="email" autocomplete="email" required placeholder="you@email.com" aria-label="Email address" />
+      <form class="wl-form stack" data-source="hero" novalidate>
+        <div class="row">
+          <div class="field">
+            <label class="hp" aria-hidden="true">Leave this empty<input type="text" name="company" tabindex="-1" autocomplete="off" /></label>
+            <input class="wl-input" type="email" name="email" inputmode="email" autocomplete="email" required placeholder="you@email.com" aria-label="Email address" />
+          </div>
+          <button class="btn btn-accent" type="submit">Join the waitlist</button>
         </div>
-        <button class="btn btn-accent" type="submit">Join the waitlist</button>
-        <p class="wl-note">Get an early invite when we open — <b>South East London first.</b> No spam, unsubscribe any time.</p>
+        <input class="wl-textarea" type="text" name="swap_first" maxlength="140" required placeholder="What's the first thing you'd swap?" aria-label="What's the first thing you'd swap?" />
+        <p class="wl-note">Pop your email in and we'll give you a shout when we open near you. No spam.</p>
         <div class="wl-msg" role="status" aria-live="polite"></div>
       </form>
-    </div>
-
-    <!-- build-in-public founder card (replaces the app screenshot) -->
-    <aside class="builder-card reveal" aria-label="A note from the founders">
-      <div class="stripes"></div>
-      <div class="bc-in">
-        <span class="tag"><span class="live"></span>Building in public</span>
-        <p class="note">We're a small London team who got tired of binning good stuff while buying more. So we're building <b>Swapaya</b> — a way to swap instead of shop. We're sharing the whole messy journey, and asking what <b>you'd</b> want. Come build it with us.</p>
-        <p class="sign">— <a href="https://www.linkedin.com/in/digvijay-singh-2467a5110/" target="_blank" rel="noopener" style="color:var(--ink);text-decoration:underline;text-underline-offset:2px">Digvijay</a> &amp; <a href="https://www.linkedin.com/in/antoni-p-b4b964110/" target="_blank" rel="noopener" style="color:var(--ink);text-decoration:underline;text-underline-offset:2px">Antoni</a>, co-founders</p>
-        <div class="follow-row">
-          <a class="follow-btn" href="https://www.instagram.com/swapaya.app/" target="_blank" rel="noopener">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.4" cy="6.6" r="1" fill="currentColor" stroke="none"/></svg>Instagram</a>
-          <a class="follow-btn" href="https://www.tiktok.com/@swapaya.app" target="_blank" rel="noopener">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 8.6a5.8 5.8 0 0 1-3.6-1.2v6.9a5.3 5.3 0 1 1-4.6-5.25v2.7a2.65 2.65 0 1 0 1.85 2.53V2.5h2.75A3.6 3.6 0 0 0 20 5.85z"/></svg>TikTok</a>
-          <a class="follow-btn" href="https://www.linkedin.com/company/swapaya/" target="_blank" rel="noopener">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5A2.5 2.5 0 1 1 5 8.5a2.5 2.5 0 0 1 0-5ZM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.76-2.05C20.4 8.65 21 11 21 14.1V21h-4v-6.1c0-1.45-.03-3.3-2-3.3s-2.32 1.57-2.32 3.2V21H9z"/></svg>LinkedIn</a>
-        </div>
-      </div>
-    </aside>
-  </div>
-</section>
-
-<!-- ============ MISSION BAND ============ -->
-<section class="wrap" aria-label="Our mission">
-  <div class="band reveal">
-    <div class="band-inner wrap">
-      <p class="eyebrow">Why we're building this</p>
-      <h2>Give it a<br /><em>second life.</em></h2>
-      <p>We throw out mountains of good things, then go and buy them all again. Swapaya is our answer: a calm, human way to keep good stuff moving — swapped locally, handed over with trust. Not another place to buy and sell. A place to swap.</p>
     </div>
   </div>
 </section>
@@ -396,69 +375,35 @@ footer.site{padding:56px 0 40px;border-top:1px solid var(--hair);margin-top:clam
 <section class="section-pad" id="idea">
   <div class="wrap">
     <div class="section-head reveal">
-      <p class="eyebrow">The idea · no screenshots yet</p>
+      <p class="eyebrow">How it works</p>
       <h2>Here's how swapping will work.</h2>
-      <p>The app's still in the workshop, so we're keeping the screens under wraps for now. But the idea is simple — and there's no money, no couriers and no price tags anywhere in it.</p>
+      <p>Four steps, no faff. Here's the whole thing.</p>
     </div>
     <div class="steps">
       <div class="step reveal">
         <span class="n">01 · SNAP</span>
         <span class="si"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7a2 2 0 0 1 2-2h1.5l1-2h7l1 2H20a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2z"/><circle cx="12" cy="11.5" r="4"/></svg></span>
         <h3>Snap it</h3>
-        <p>Point your camera at anything you're done with. It gets listed for you in seconds — no forms to fill.</p>
+        <p>Point your camera at the thing you keep meaning to get rid of. It's listed in seconds. No forms to fill in.</p>
       </div>
       <div class="step reveal">
         <span class="n">02 · MATCH</span>
         <span class="si"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 11-8 11s-8-5-8-11a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="2.6"/></svg></span>
-        <h3>Matched nearby</h3>
-        <p>See what people close to you want to swap. Everything's local — you'll meet in person, never post a parcel.</p>
+        <h3>Find a match</h3>
+        <p>See what people want to swap near you. Fancy someone's stuff? You're halfway there.</p>
       </div>
       <div class="step reveal">
         <span class="n">03 · OFFER</span>
         <span class="si"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 8h12M16 5l3 3-3 3"/><path d="M17 16H5M8 19l-3-3 3-3"/></svg></span>
         <h3>Offer a swap</h3>
-        <p>Like something? Offer one of your things — or a small bundle. You both decide it's fair. No price tags, ever.</p>
+        <p>Offer one of your things, or a little bundle. You both decide it's a fair trade. No prices, ever.</p>
       </div>
       <div class="step reveal">
-        <span class="n">04 · MEET</span>
-        <span class="si"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H8l-4 4V6a2 2 0 0 1 2-2h13a2 2 0 0 1 2 2z"/></svg></span>
-        <h3>Meet &amp; swap</h3>
-        <p>Agree the details in chat, meet somewhere public, make the swap — then rate the person and the meetup.</p>
+        <span class="n">04 · MEET / POST</span>
+        <span class="si"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8l-9-5-9 5v8l9 5 9-5z"/><path d="M3 8l9 5 9-5M12 13v8"/></svg></span>
+        <h3>Meet or post</h3>
+        <p>Meet up somewhere public, or post it if that's easier. Make the swap, then rate how it went.</p>
       </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ FOLLOW THE BUILD ============ -->
-<section class="section-pad" id="build" style="padding-top:0">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <p class="eyebrow">Follow the build</p>
-      <h2>Watch us build it — and tell us what to build.</h2>
-      <p>We post the real behind-the-scenes: what we're making, what's breaking, and the calls we can't decide on our own. Every week we ask you to vote. Follow along and you'll help shape Swapaya before it's even out.</p>
-    </div>
-    <div class="channels">
-      <a class="channel reveal" href="https://www.instagram.com/swapaya.app/" target="_blank" rel="noopener">
-        <span class="ch-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.4" cy="6.6" r="1" fill="currentColor" stroke="none"/></svg></span>
-        <h3>Instagram</h3>
-        <div class="handle">@swapaya.app</div>
-        <p>Behind-the-scenes, design polls and the "would you swap this?" questions. The daily heartbeat of the build.</p>
-        <span class="go">Follow <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-      </a>
-      <a class="channel reveal" href="https://www.tiktok.com/@swapaya.app" target="_blank" rel="noopener">
-        <span class="ch-ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 8.6a5.8 5.8 0 0 1-3.6-1.2v6.9a5.3 5.3 0 1 1-4.6-5.25v2.7a2.65 2.65 0 1 0 1.85 2.53V2.5h2.75A3.6 3.6 0 0 0 20 5.85z"/></svg></span>
-        <h3>TikTok</h3>
-        <div class="handle">@swapaya.app</div>
-        <p>The build in 30-second cuts — the wins, the fails, and the swaps we hope you'll make. Where the story moves fastest.</p>
-        <span class="go">Follow <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-      </a>
-      <a class="channel reveal" href="https://www.linkedin.com/company/swapaya/" target="_blank" rel="noopener">
-        <span class="ch-ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5A2.5 2.5 0 1 1 5 8.5a2.5 2.5 0 0 1 0-5ZM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.76-2.05C20.4 8.65 21 11 21 14.1V21h-4v-6.1c0-1.45-.03-3.3-2-3.3s-2.32 1.57-2.32 3.2V21H9z"/></svg></span>
-        <h3>LinkedIn</h3>
-        <div class="handle">/company/swapaya</div>
-        <p>The founder's-eye view — why we're building it, what we're learning, and the bigger bet on swapping over shopping.</p>
-        <span class="go">Follow <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-      </a>
     </div>
   </div>
 </section>
@@ -468,23 +413,23 @@ footer.site{padding:56px 0 40px;border-top:1px solid var(--hair);margin-top:clam
   <div class="wrap">
     <div class="section-head reveal">
       <p class="eyebrow">Why swap</p>
-      <h2>Better for the planet, your wallet, and your street.</h2>
+      <h2>Better for your wallet, your neighbourhood, and the planet.</h2>
     </div>
     <div class="vgrid">
       <div class="vcard a reveal">
-        <span class="vi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 4 13c0-5 5-9 8-11 3 2 8 6 8 11a7 7 0 0 1-7 7Z"/><path d="M12 21v-7"/></svg></span>
-        <h3>Kinder on the planet</h3>
-        <p>Every swap is one less thing made and one less thing binned. Good stuff keeps moving instead of going to landfill.</p>
+        <span class="vi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 8h12M16 5l3 3-3 3"/><path d="M17 16H5M8 19l-3-3 3-3"/></svg></span>
+        <h3>Saves you money</h3>
+        <p>No fees, no subscriptions, no prices. You both agree the swap's fair and that's it. Money never comes into it.</p>
       </div>
       <div class="vcard b reveal">
-        <span class="vi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 8h12M16 5l3 3-3 3"/><path d="M17 16H5M8 19l-3-3 3-3"/></svg></span>
-        <h3>Kinder on your wallet</h3>
-        <p>No fees, no subscriptions, no prices. If you're both happy with the trade, that's the whole deal — money never enters it.</p>
+        <span class="vi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 11-8 11s-8-5-8-11a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="2.6"/></svg></span>
+        <h3>Right on your doorstep</h3>
+        <p>Swap with people near you, or post further afield if you'd rather. Meet at the café, the market, wherever suits.</p>
       </div>
       <div class="vcard c reveal">
-        <span class="vi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 11-8 11s-8-5-8-11a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="2.6"/></svg></span>
-        <h3>Actually local</h3>
-        <p>Swap with people down the road, not sellers across the country. Meet at the café or the market, swap, done.</p>
+        <span class="vi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 4 13c0-5 5-9 8-11 3 2 8 6 8 11a7 7 0 0 1-7 7Z"/><path d="M12 21v-7"/></svg></span>
+        <h3>Better for the planet</h3>
+        <p>Every swap is one less thing made and one less thing binned. Good stuff keeps moving instead of going to waste.</p>
       </div>
     </div>
   </div>
@@ -500,23 +445,35 @@ footer.site{padding:56px 0 40px;border-top:1px solid var(--hair);margin-top:clam
     <div class="faq reveal">
       <details>
         <summary>Is Swapaya out yet? <span class="plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
-        <div class="ans">Not quite — we're building it right now, in the open. We're opening in South East London first, neighbourhood by neighbourhood, then the rest of London and beyond. Join the waitlist and we'll invite you the moment it reaches your area.</div>
+        <div class="ans">Not quite — we're building it right now. We're opening across London first, then beyond. Join the waitlist and we'll invite you the moment it's live in your area.</div>
       </details>
       <details>
-        <summary>Will it really be free? <span class="plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
-        <div class="ans">Yes. No fees, no subscriptions, no prices. Swapaya is item for item — you trade one of your things for one of theirs (or a small bundle). Nobody takes a cut, and money never enters the swap.</div>
+        <summary>Is it really free? <span class="plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+        <div class="ans">Yes. No fees, no subscriptions, no prices. You swap one of your things for one of theirs (or a small bundle). Nobody takes a cut.</div>
+      </details>
+      <details>
+        <summary>Why are you building this? <span class="plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+        <div class="ans">We throw out mountains of good things, then go and buy them all again. Swapaya is our answer: a human way to keep good stuff moving — swapped locally, handed over with trust. It's not another place to buy and sell — it's a place to swap, and give good things a second life.</div>
+      </details>
+      <details>
+        <summary>How do swaps work — in person or by post? <span class="plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+        <div class="ans">Either. Meet someone nearby and swap face to face, or post it if that's easier. You decide what works for each swap.</div>
+      </details>
+      <details>
+        <summary>Who pays for postage? <span class="plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+        <div class="ans">You and the other swapper agree that when you arrange the swap — most people just each post their own item to the other. There's no Swapaya fee on top; postage is the only cost, and it's yours to sort between you. If you'd rather not post at all, meet up in person instead.</div>
+      </details>
+      <details>
+        <summary>How do swaps stay safe and fair? <span class="plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+        <div class="ans">You see photos and chat before you commit to anything, so nothing's a surprise. Meeting in person? The app suggests safe, public places roughly halfway between you, so you're not heading somewhere unfamiliar on your own. Posting instead? Agree the details up front and use tracked delivery. After every swap you rate each other, so the community stays good to swap with — and people who don't play fair don't last.</div>
       </details>
       <details>
         <summary>How can I help shape it? <span class="plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
-        <div class="ans">That's the whole point of building in public. Follow us on <a href="https://www.instagram.com/swapaya.app/" target="_blank" rel="noopener">Instagram</a>, <a href="https://www.tiktok.com/@swapaya.app" target="_blank" rel="noopener">TikTok</a> or <a href="https://www.linkedin.com/company/swapaya/" target="_blank" rel="noopener">LinkedIn</a>, vote in our weekly questions, and tell us what you'd swap first when you join the waitlist. We build with you, not just for you.</div>
+        <div class="ans">Tell us what you'd swap first when you join the waitlist — it genuinely shapes what we build and how we launch. You can also follow along on <a href="https://www.instagram.com/swapaya.app/" target="_blank" rel="noopener">Instagram</a>, <a href="https://www.tiktok.com/@swapaya.app" target="_blank" rel="noopener">TikTok</a> and <a href="https://www.linkedin.com/company/swapaya/" target="_blank" rel="noopener">LinkedIn</a> to see how it's going.</div>
       </details>
       <details>
-        <summary>How will swaps stay safe and fair? <span class="plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
-        <div class="ans">You'll see photos, chat before you commit, and meet in a public place. Fairness is yours to agree — photo for photo, human to human. After you meet, you rate the person and the meetup, so the community stays good to swap with.</div>
-      </details>
-      <details>
-        <summary>Which phones will it be on? <span class="plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
-        <div class="ans">Android first, with iPhone to follow. Pop your email on the waitlist either way — we'll tell you the moment your phone and your area are live.</div>
+        <summary>How do I use Swapaya? <span class="plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+        <div class="ans">Swapaya is a mobile app. We're launching on Android first, with iPhone coming soon. Join the waitlist and we'll let you know when it's available for your device.</div>
       </details>
     </div>
   </div>
@@ -529,7 +486,7 @@ footer.site{padding:56px 0 40px;border-top:1px solid var(--hair);margin-top:clam
     <div class="cta-inner wrap">
       <p class="eyebrow">Be first in line</p>
       <h2>Join the waitlist.<br />Help build the swap.</h2>
-      <p>Drop your email for an early invite — South East London first. Tell us what you'd swap first, and you might see it answered in one of our posts.</p>
+      <p>Drop your email for an early invite — London first.</p>
       <form class="wl-form stack" data-source="footer-cta" novalidate style="max-width:520px">
         <div class="row">
           <div class="field">
@@ -538,7 +495,7 @@ footer.site{padding:56px 0 40px;border-top:1px solid var(--hair);margin-top:clam
           </div>
           <button class="btn btn-accent" type="submit">Join the waitlist</button>
         </div>
-        <input class="wl-textarea" type="text" name="swap_first" maxlength="140" placeholder="What's the first thing you'd swap? (optional)" aria-label="What's the first thing you'd swap? Optional" />
+        <input class="wl-textarea" type="text" name="swap_first" maxlength="140" required placeholder="What's the first thing you'd swap?" aria-label="What's the first thing you'd swap?" />
         <p class="wl-note">No spam — one email when it's your turn, plus the odd update. <b>Unsubscribe any time.</b></p>
         <div class="wl-msg" role="status" aria-live="polite"></div>
       </form>
@@ -554,7 +511,7 @@ footer.site{padding:56px 0 40px;border-top:1px solid var(--hair);margin-top:clam
     <div class="foot-grid">
       <div class="foot-brand">
         <a class="wordmark" href="#top">swapaya<span class="dot">.</span></a>
-        <p>Snap it. Swap it. We're building a calm, local way to give good things a second life. Made in London, in the open.</p>
+        <p>Snap it. Swap it. Swap the stuff you don't use for stuff you do. Made in London.</p>
         <div class="socials">
           <a class="soc" href="https://www.instagram.com/swapaya.app/" target="_blank" rel="noopener" aria-label="Swapaya on Instagram">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.4" cy="6.6" r="1" fill="currentColor" stroke="none"/></svg>
@@ -570,8 +527,7 @@ footer.site{padding:56px 0 40px;border-top:1px solid var(--hair);margin-top:clam
       <div class="foot-cols">
         <div class="foot-col">
           <h4>Explore</h4>
-          <a href="#idea">The idea</a>
-          <a href="#build">Follow the build</a>
+          <a href="#idea">How it works</a>
           <a href="#faq">FAQ</a>
           <a href="#join">Join the waitlist</a>
         </div>
@@ -582,7 +538,7 @@ footer.site{padding:56px 0 40px;border-top:1px solid var(--hair);margin-top:clam
       </div>
     </div>
     <div class="foot-bottom">
-      <span>© 2026 Swapaya · Building in public in London</span>
+      <span>© 2026 Swapaya · Made in London</span>
       <span>Snap it. Swap it.</span>
     </div>
   </div>
@@ -645,6 +601,16 @@ async function submitEmail(payload){
   }
 }
 
+/* share the page after signup — native share sheet on mobile, copy-link fallback on desktop */
+async function shareSwapaya(btn){
+  const url = 'https://swapaya.com';
+  const shareData = { title: 'Swapaya', text: 'Swap the stuff you don’t use for stuff you do — join the Swapaya waitlist.', url };
+  if (navigator.share) { try { await navigator.share(shareData); } catch(e){} return; }
+  try { await navigator.clipboard.writeText(url); } catch(e) { window.prompt('Copy this link:', url); return; }
+  const lbl = btn && btn.querySelector('.lbl');
+  if (lbl) { const o = lbl.textContent; lbl.textContent = 'Link copied!'; setTimeout(()=>{ lbl.textContent = o; }, 2000); }
+}
+
 document.querySelectorAll('.wl-form').forEach(form => {
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
@@ -654,16 +620,17 @@ document.querySelectorAll('.wl-form').forEach(form => {
     // honeypot: bots fill hidden field → pretend success, save nothing
     if (form.company && form.company.value) { showMsg(form,'ok',"You're on the list."); form.reset(); return; }
     if (!EMAIL_RE.test(email)) { showMsg(form,'err','That email doesn’t look right — mind checking it?'); return; }
+    if (form.swap_first && !swapFirst) { showMsg(form,'err','Tell us the first thing you’d swap — it helps us launch near you.'); form.swap_first.focus(); return; }
 
     const payload = { email: email, source: form.dataset.source || 'site' };
-    if (swapFirst) payload.swap_first = swapFirst;
+    if (form.swap_first) payload.swap_first = swapFirst;
 
     const label = btn.textContent;
     btn.disabled = true; btn.textContent = 'Joining…';
     try {
       await submitEmail(payload);
       form.reset();
-      showMsg(form,'ok','You’re in. Now follow the build on <a href="'+WAITLIST.socialUrl+'" target="_blank" rel="noopener">'+WAITLIST.socialHandle+'</a> — we post the journey daily.');
+      showMsg(form,'ok','You’re in — an early invite is on its way. Know someone who’d love this?<br><button type="button" class="share-btn" onclick="shareSwapaya(this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg><span class="lbl">Share Swapaya</span></button>');
     } catch (err) {
       showMsg(form,'err','Couldn’t save that just now. Please try again in a moment.');
     } finally {
