@@ -1240,7 +1240,8 @@ z"/></svg>ya</span>
     <form class="wl-form" data-source="hero" novalidate>
       <label class="hp" aria-hidden="true">Leave this empty<input type="text" name="company" tabindex="-1" autocomplete="off" /></label>
       <input class="wl-input" type="email" name="email" inputmode="email" autocomplete="email" required placeholder="you@email.com" aria-label="Email address" />
-      <button class="btn btn-accent" type="submit">Join the waitlist</button>
+      <input class="wl-input" type="text" name="swap_first" maxlength="140" required placeholder="What's the first thing you'd swap?" aria-label="What's the first thing you'd swap?" />
+	  <button class="btn btn-accent" type="submit">Join the waitlist</button>
       <p class="wl-note">Pop your email in and we'll give you a shout when we open near you. No spam.</p>
       <div class="wl-msg" role="status" aria-live="polite"></div>
     </form>
