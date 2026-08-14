@@ -1,0 +1,84 @@
+# ---- macOS ----
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+.fseventsd
+.AppleDouble
+.LSOverride
+Icon
+Icon?
+
+# ---- Windows / Linux ----
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*~
+.directory
+.Trash-*
+
+# ---- Editors / IDEs ----
+.vscode/
+!.vscode/settings.json
+!.vscode/extensions.json
+.cursor/
+.idea/
+*.iml
+*.iws
+*.ipr
+.fleet/
+.history/
+*.code-workspace
+.sublime-project
+.sublime-workspace
+.nova/
+.zed/
+
+# ---- Node / tooling (if ever added) ----
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.npm/
+.pnpm-store/
+.cache/
+dist/
+build/
+.parcel-cache/
+
+# ---- Python (build-legal.py helpers) ----
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.mypy_cache/
+.ruff_cache/
+
+# ---- Env / secrets — never commit ----
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets.json
+
+# ---- Scratch / working files ----
+*.log
+*.tmp
+*.bak
+*.orig
+*.rej
+_scratch/
+tmp/
+preview-*.html
+*.artifact.html
+
+# ---- Source docs kept out of a PUBLIC repo ----
+# Legal source .docx live elsewhere; the generated HTML is what ships.
+*.docx
+~$*
