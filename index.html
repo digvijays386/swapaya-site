@@ -4,13 +4,13 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Swapaya — Snap it. Swap it.</title>
-<meta name="description" content="Your unused stuff is someone's dream find. Swap it for something you actually want — no cash needed. Launching across London September 2026. Join the Swapaya waitlist." />
+<meta name="description" content="Your unused stuff is someone's dream find. Swap it for something you actually want — no cash needed. Live now on iPhone and Android, starting in South East London. No prices, no fees." />
 
 <!-- Open Graph / social share cards -->
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Swapaya" />
 <meta property="og:title" content="Swapaya — Snap it. Swap it." />
-<meta property="og:description" content="Your unused stuff is someone's dream find. Swap it for something you actually want — no cash needed. London first, September 2026." />
+<meta property="og:description" content="Your unused stuff is someone's dream find. Swap it for something you actually want — no cash needed. Live now on iPhone and Android, South East London first." />
 <meta property="og:url" content="https://swapaya.com" />
 <meta property="og:image" content="https://swapaya.com/og.png" />
 <meta property="og:image:width" content="1200" />
@@ -20,6 +20,9 @@
 <meta name="twitter:image" content="https://swapaya.com/og.png" />
 <meta name="theme-color" content="#FAF4E8" />
 <link rel="canonical" href="https://swapaya.com/" />
+<meta name="apple-itunes-app" content="app-id=6796486365" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","name":"Swapaya","url":"https://swapaya.com","logo":"https://swapaya.com/apple-touch-icon.png","email":"hello@swapaya.com","areaServed":"South East London","sameAs":["https://www.instagram.com/swapaya.app/","https://www.tiktok.com/@swapaya.app","https://www.linkedin.com/company/swapaya/"]},{"@type":"MobileApplication","name":"Swapaya","operatingSystem":"iOS, Android","applicationCategory":"LifestyleApplication","installUrl":["https://apps.apple.com/gb/app/swapaya/id6796486365","https://play.google.com/store/apps/details?id=com.swapaya.app"]}]}</script>
+
 <link rel="icon" href="/favicon.ico" sizes="32x32" />
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
@@ -149,6 +152,51 @@ header.site.scrolled{border-bottom-color:var(--line)}
 .pill .dot svg{width:12px;height:12px}
 
 /* ---------- waitlist form (order: email → swap → button, design change 2) ---------- */
+/* ---------- store badges (live since Sep 2026) ---------- */
+.store-row{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin:28px auto 0}
+.store-badge{display:inline-flex;align-items:center;gap:12px;min-width:196px;height:62px;padding:0 22px 0 18px;
+  background:#2E2A24;color:#FAF4E8;border:1.5px solid #2E2A24;border-radius:16px;text-decoration:none;
+  box-shadow:0 10px 24px -12px rgba(46,42,36,.55);transition:transform .16s,box-shadow .16s,background .16s}
+.store-badge svg{width:28px;height:28px;flex:none}
+.store-badge span{display:flex;flex-direction:column;line-height:1.05;text-align:left}
+.store-badge small{font-family:var(--body);font-size:11.5px;font-weight:500;letter-spacing:.02em;opacity:.82}
+.store-badge b{font-family:var(--head);font-size:21px;font-weight:800;letter-spacing:-.01em}
+.store-badge:hover{transform:translateY(-2px);box-shadow:0 16px 30px -14px rgba(46,42,36,.6);background:#3A352E}
+.store-badge.is-primary{outline:3px solid color-mix(in srgb,var(--accent) 55%,transparent);outline-offset:3px}
+:root[data-theme="dark"] .store-badge{border-color:#4A5A4F}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .store-badge{border-color:#4A5A4F}}
+.store-note{font-size:14px;color:var(--body-ink);margin:14px auto 0;max-width:44ch}
+.live-strip{display:inline-flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:6px 12px;margin:22px auto 0;
+  padding:10px 18px;border-radius:999px;background:var(--surface);border:1.5px solid var(--line);font-size:14px;color:var(--body-ink)}
+.live-strip b{color:var(--ink);font-weight:600}
+.live-dot{width:9px;height:9px;border-radius:50%;background:#3FA36B;box-shadow:0 0 0 0 rgba(63,163,107,.5);animation:pulse 2s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 9px rgba(63,163,107,0)}100%{box-shadow:0 0 0 0 rgba(63,163,107,0)}}
+@media (prefers-reduced-motion:reduce){.live-dot{animation:none}}
+.card a{color:var(--green);font-weight:600}
+.team{margin-top:64px;text-align:center}
+.team-h{font-size:clamp(26px,3.8vw,36px);font-weight:800;margin-top:10px;color:var(--ink);text-wrap:balance}
+.team-lede{color:var(--body-ink);font-size:16.5px;max-width:52ch;margin:12px auto 0}
+.team-row{display:grid;grid-template-columns:repeat(2,minmax(0,420px));justify-content:center;gap:18px;margin-top:30px}
+.person{display:flex;flex-direction:column;gap:14px;text-align:left;background:var(--surface);border:1.5px solid var(--line);
+  border-radius:var(--rc);padding:24px;transition:transform .18s,box-shadow .18s}
+.person:hover{transform:translateY(-4px);box-shadow:var(--shadow-card)}
+.person-top{display:flex;align-items:center;gap:14px}
+.person .av{width:58px;height:58px;border-radius:50%;display:grid;place-items:center;background:var(--green);color:var(--cream);
+  font-family:var(--head);font-weight:800;font-size:24px;flex:none}
+.person h3{font-size:19px;font-weight:800;color:var(--ink)}
+.person .role{font-size:13.5px;font-weight:600;color:var(--green);margin-top:2px}
+.person .bio{font-size:14.5px;line-height:1.6;color:var(--body-ink)}
+.person .li-btn{margin-top:auto}
+.team-close{font-family:var(--head);font-weight:800;font-size:clamp(18px,2.2vw,22px);color:var(--ink);max-width:40ch;margin:34px auto 0;text-wrap:balance}
+.li-btn{align-self:flex-start;display:inline-flex;align-items:center;gap:8px;padding:9px 16px;border-radius:999px;
+  border:1.5px solid var(--green);color:var(--green);font-family:var(--head);font-weight:800;font-size:14px;text-decoration:none;
+  transition:background .15s}
+.li-btn svg{width:16px;height:16px}
+.li-btn:hover{background:color-mix(in srgb,var(--green) 12%,transparent)}
+.team-note{margin-top:22px;font-size:14.5px;color:var(--body-ink)}
+.team-note a{color:var(--green);font-weight:600}
+@media (max-width:700px){.team-row{grid-template-columns:1fr}}
+@media (max-width:600px){.store-badge{flex:1 1 100%;max-width:300px;justify-content:center}.person{width:100%}}
 .wl-form{display:flex;flex-direction:column;gap:10px;margin:26px auto 0;max-width:470px;text-align:left}
 .wl-input{width:100%;height:54px;border-radius:var(--ri);border:1.5px solid var(--line-2);background:var(--surface);
   font-family:var(--body);font-size:16px;padding:0 18px;color:var(--ink);transition:border-color .15s,box-shadow .15s}
@@ -727,7 +775,7 @@ M406.098999,533.067383
 	C458.807587,519.210266 442.452759,536.054626 423.505463,538.723450 
 	C417.387970,539.585022 410.516235,539.708862 406.098999,533.067383 
 z"/></svg>ya</span>
-      <span class="badge-soon">Coming soon</span>
+      <span class="badge-soon">Live now</span>
     </a>
     <nav class="nav-links" aria-label="Primary">
       <a class="txt" href="#how">How it works</a>
@@ -736,7 +784,7 @@ z"/></svg>ya</span>
         <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg>
         <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
       </button>
-      <a class="btn btn-ghost btn-sm" href="#join">Join the waitlist</a>
+      <a class="btn btn-ghost btn-sm" href="#get" data-store-link>Get the app</a>
     </nav>
   </div>
 </header>
@@ -744,7 +792,7 @@ z"/></svg>ya</span>
 <main>
 
 <!-- ============ HERO ============ -->
-<section class="hero" id="join">
+<section class="hero" id="get">
   <div class="wrap">
     <span class="wm wm-lg">Swap<svg class="wa" viewBox="203 83 455 633" fill="currentColor" fill-rule="evenodd" aria-hidden="true" focusable="false"><path d="
 M398.061890,613.866394 
@@ -1228,7 +1276,7 @@ M406.098999,533.067383
 	C458.807587,519.210266 442.452759,536.054626 423.505463,538.723450 
 	C417.387970,539.585022 410.516235,539.708862 406.098999,533.067383 
 z"/></svg>ya</span>
-    <span class="eyebrow">Launching September 2026.</span>
+    <span class="eyebrow">Live now on iPhone and Android</span>
     <h1>Snap it. Swap it.</h1>
     <p class="lede">Your unused stuff is someone's dream find. Swap it for something you actually want – no cash needed.</p>
 
@@ -1237,14 +1285,12 @@ z"/></svg>ya</span>
       <span class="pill"><span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>No prices</span>
     </div>
 
-    <form class="wl-form" data-source="hero" novalidate>
-      <label class="hp" aria-hidden="true">Leave this empty<input type="text" name="company" tabindex="-1" autocomplete="off" /></label>
-      <input class="wl-input" type="email" name="email" inputmode="email" autocomplete="email" required placeholder="you@email.com" aria-label="Email address" />
-      <input class="wl-input" type="text" name="swap_first" maxlength="140" required placeholder="What's the first thing you'd swap?" aria-label="What's the first thing you'd swap?" />
-	  <button class="btn btn-accent" type="submit">Join the waitlist</button>
-      <p class="wl-note">Pop your email in and we'll give you a shout when we open near you. No spam.</p>
-      <div class="wl-msg" role="status" aria-live="polite"></div>
-    </form>
+    <div class="store-row">
+      <a class="store-badge" data-store="ios" href="https://apps.apple.com/gb/app/swapaya/id6796486365" rel="noopener" aria-label="Download Swapaya on the App Store"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/></svg><span><small>Download on the</small><b>App Store</b></span></a>
+      <a class="store-badge" data-store="android" href="https://play.google.com/store/apps/details?id=com.swapaya.app" rel="noopener" aria-label="Get Swapaya on Google Play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.6 1.8 13.5 12l-9.9 10.2c-.4-.2-.6-.6-.6-1.1V2.9c0-.5.2-.9.6-1.1Z" fill="#7FBF9A"/><path d="m16.8 8.7-3.3 3.3-9.9-10.2c.3-.2.8-.2 1.2 0l12 6.9Z" fill="#FAF4E8"/><path d="m16.8 15.3-12 6.9c-.4.2-.9.2-1.2 0l9.9-10.2 3.3 3.3Z" fill="#FA7D1B"/><path d="m20.4 12-3.6 3.3-3.3-3.3 3.3-3.3 3 1.7c1 .6 1 1.6.6 1.6Z" fill="#F2C94C"/></svg><span><small>Get it on</small><b>Google Play</b></span></a>
+    </div>
+    <p class="store-note">Free. No prices, no fees, no commission.</p>
+    <div class="live-strip" aria-label="Live now in South East London"><span class="live-dot" aria-hidden="true"></span><b>Live now in South East London</b><span class="areas">Greenwich · Lewisham · Deptford · Blackheath · Charlton · Woolwich · Peckham</span></div>
   </div>
 </section>
 
@@ -1253,7 +1299,7 @@ z"/></svg>ya</span>
   <div class="wrap">
     <div class="sec-head reveal">
       <p class="eyebrow">How it works</p>
-      <h2>Here's how swapping will work.</h2>
+      <h2>Here's how swapping works.</h2>
       <p>Four steps, no faff. Here's the whole thing.</p>
     </div>
     <div class="grid-4">
@@ -1273,7 +1319,7 @@ z"/></svg>ya</span>
         <span class="n">03 · OFFER</span>
         <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 8h12M16 5l3 3-3 3"/><path d="M17 16H5M8 19l-3-3 3-3"/></svg></span>
         <h3>Offer a swap</h3>
-        <p>Offer one of your things, or a little bundle. You both decide it's a fair trade. No prices, ever.</p>
+        <p>Offer one of your things, or a little bundle. You both decide it feels fair. No prices, ever.</p>
       </div>
       <div class="card reveal">
         <span class="n">04 · MEET / POST</span>
@@ -1312,6 +1358,55 @@ z"/></svg>ya</span>
   </div>
 </section>
 
+<!-- ============ SOUTH EAST LONDON ============ -->
+<section class="sec" id="london" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Starting in South East London</p>
+      <h2>Launched on our own doorstep.</h2>
+      <p>We're opening small, on purpose, so the people near you are actually near you. Swap in person around South East London today. Anywhere else, swap by post.</p>
+    </div>
+    <div class="grid-3">
+      <div class="card reveal">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V10l7-5 7 5v11"/><path d="M9 21v-6h6v6"/></svg></span>
+        <h3>Meet somewhere public</h3>
+        <p>The app suggests real public places to meet — stations, libraries, parks, high streets — from over 3,600 across Greater London.</p>
+      </div>
+      <div class="card reveal">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></span>
+        <h3>Rate the person, not the thing</h3>
+        <p>After a swap you rate how it went — the person and the meetup. Good swappers build a reputation people can see.</p>
+      </div>
+      <div class="card reveal">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>
+        <h3>Chat first, then swap</h3>
+        <p>Agree everything in the app before you meet. Confirm the swap when it's done. Questions about safety? <a href="mailto:safety@swapaya.com">safety@swapaya.com</a></p>
+      </div>
+    </div>
+
+    <div class="team reveal">
+      <p class="eyebrow">The people behind Swapaya</p>
+      <h2 class="team-h">Two founders bringing product, technology and business together.</h2>
+      <p class="team-lede">Swapaya brought together Antoni's original vision for a swapping marketplace and Digvijay's experience building mobile products. Together, we've taken it from an idea into a working platform and are now focused on proving how swapping can work for real communities.</p>
+      <div class="team-row">
+        <article class="person">
+          <div class="person-top"><span class="av" aria-hidden="true">D</span><div><h3>Digvijay Singh</h3><p class="role">Co-founder &amp; CTO</p></div></div>
+          <p class="bio">Digvijay leads product and engineering at Swapaya. He took the platform from concept to working mobile product, shaping the user experience, architecture and technology behind listing, discovery, matching and swapping.</p>
+          <p class="bio">A University of Greenwich alumnus and experienced mobile engineer, he also works across product strategy and customer validation as Swapaya grows from an early-stage product into a real marketplace.</p>
+          <a class="li-btn" href="https://www.linkedin.com/in/digvijay-singh-2467a5110" target="_blank" rel="noopener" aria-label="Digvijay Singh on LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5A2.5 2.5 0 1 1 5 8.5a2.5 2.5 0 0 1 0-5ZM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.76-2.05C20.4 8.65 21 11 21 14.1V21h-4v-6.1c0-1.45-.03-3.3-2-3.3s-2.32 1.57-2.32 3.2V21H9z"/></svg><span>Connect with Digvijay on LinkedIn</span></a>
+        </article>
+        <article class="person">
+          <div class="person-top"><span class="av" aria-hidden="true">A</span><div><h3>Antoni Pullia</h3><p class="role">Co-founder &amp; CEO</p></div></div>
+          <p class="bio">Antoni originated the idea behind Swapaya and leads its commercial direction, brand and partnerships. His focus is building the relationships and opportunities that can help Swapaya reach communities, validate the model and grow into a sustainable business.</p>
+          <a class="li-btn" href="https://www.linkedin.com/in/antoni-p-b4b964110/" target="_blank" rel="noopener" aria-label="Antoni Pullia on LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5A2.5 2.5 0 1 1 5 8.5a2.5 2.5 0 0 1 0-5ZM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.76-2.05C20.4 8.65 21 11 21 14.1V21h-4v-6.1c0-1.45-.03-3.3-2-3.3s-2.32 1.57-2.32 3.2V21H9z"/></svg><span>Connect with Antoni on LinkedIn</span></a>
+        </article>
+      </div>
+      <p class="team-close">We're building Swapaya around a simple question: why get something new when what you need may already be sitting unused nearby?</p>
+      <p class="team-note">Say hello: <a href="mailto:hello@swapaya.com">hello@swapaya.com</a></p>
+    </div>
+  </div>
+</section>
+
 <!-- ============ FAQ ============ -->
 <section class="sec" id="faq" style="padding-top:0">
   <div class="wrap">
@@ -1322,7 +1417,7 @@ z"/></svg>ya</span>
     <div class="faq reveal">
       <details>
         <summary>Is Swapaya out yet? <span class="pl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
-        <div class="ans">Not quite — we're building it right now. We're opening across London first, then beyond. Join the waitlist and we'll invite you the moment it's live in your area.</div>
+        <div class="ans">Yes — it's live on <a href="https://apps.apple.com/gb/app/swapaya/id6796486365" rel="noopener">iPhone</a> and <a href="https://play.google.com/store/apps/details?id=com.swapaya.app" rel="noopener">Android</a>. We're starting in South East London, so that's where you'll find the most to swap nearby. Anywhere else, you can still swap by post with anyone whose item is happy to post.</div>
       </details>
       <details>
         <summary>Is it really free? <span class="pl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
@@ -1357,7 +1452,7 @@ If an issue occurs, you can leave an honest review to help other users. Please n
       </details>
       <details>
         <summary>How do I use Swapaya? <span class="pl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
-        <div class="ans">Swapaya is a mobile app. We're launching on Android first, with iPhone coming soon. Join the waitlist and we'll let you know when it's available for your device.</div>
+        <div class="ans">Download it free from the <a href="https://apps.apple.com/gb/app/swapaya/id6796486365" rel="noopener">App Store</a> or <a href="https://play.google.com/store/apps/details?id=com.swapaya.app" rel="noopener">Google Play</a>. Point your camera at something you don't use and it's listed in about ten seconds. Then see what's near you and offer a swap.</div>
       </details>
     </div>
   </div>
@@ -1367,14 +1462,18 @@ If an issue occurs, you can leave an honest review to help other users. Please n
 <section class="wrap" id="join-bottom">
   <div class="cta-band reveal">
     <div class="cta-inner wrap">
-      <p class="eyebrow">Be first in line</p>
-      <h2>Join the waitlist.<br />Help build the swap.</h2>
-      <p>Drop your email for an early invite. We open across London in September.</p>
+      <p class="eyebrow">Not in South East London?</p>
+      <h2>Tell us where you are.<br />We'll come to you.</h2>
+      <div class="store-row center">
+      <a class="store-badge" data-store="ios" href="https://apps.apple.com/gb/app/swapaya/id6796486365" rel="noopener" aria-label="Download Swapaya on the App Store"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/></svg><span><small>Download on the</small><b>App Store</b></span></a>
+      <a class="store-badge" data-store="android" href="https://play.google.com/store/apps/details?id=com.swapaya.app" rel="noopener" aria-label="Get Swapaya on Google Play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.6 1.8 13.5 12l-9.9 10.2c-.4-.2-.6-.6-.6-1.1V2.9c0-.5.2-.9.6-1.1Z" fill="#7FBF9A"/><path d="m16.8 8.7-3.3 3.3-9.9-10.2c.3-.2.8-.2 1.2 0l12 6.9Z" fill="#FAF4E8"/><path d="m16.8 15.3-12 6.9c-.4.2-.9.2-1.2 0l9.9-10.2 3.3 3.3Z" fill="#FA7D1B"/><path d="m20.4 12-3.6 3.3-3.3-3.3 3.3-3.3 3 1.7c1 .6 1 1.6.6 1.6Z" fill="#F2C94C"/></svg><span><small>Get it on</small><b>Google Play</b></span></a>
+    </div>
+      <p>The app works anywhere by post. Leave your email and we'll give you a shout when it's busy near you — it decides where we open next.</p>
       <form class="wl-form" data-source="footer-cta" novalidate>
         <label class="hp" aria-hidden="true">Leave this empty<input type="text" name="company" tabindex="-1" autocomplete="off" /></label>
         <input class="wl-input" type="email" name="email" inputmode="email" autocomplete="email" required placeholder="you@email.com" aria-label="Email address" />
         <input class="wl-input" type="text" name="swap_first" maxlength="140" required placeholder="What's the first thing you'd swap?" aria-label="What's the first thing you'd swap?" />
-        <button class="btn btn-accent" type="submit">Join the waitlist</button>
+        <button class="btn btn-accent" type="submit">Keep me posted</button>
         <p class="wl-note">No spam — one email when it's your turn, plus the odd update. <b>Unsubscribe any time.</b></p>
         <div class="wl-msg" role="status" aria-live="polite"></div>
       </form>
@@ -1888,11 +1987,17 @@ z"/></svg>ya</a>
           <h4>Explore</h4>
           <a href="#how">How it works</a>
           <a href="#faq">FAQ</a>
-          <a href="#join">Join the waitlist</a>
+          <a href="#get" data-store-link>Get the app</a>
+        </div>
+        <div class="foot-col">
+          <h4>Get the app</h4>
+          <a href="https://apps.apple.com/gb/app/swapaya/id6796486365" rel="noopener">App Store</a>
+          <a href="https://play.google.com/store/apps/details?id=com.swapaya.app" rel="noopener">Google Play</a>
         </div>
         <div class="foot-col">
           <h4>Company</h4>
           <a href="mailto:hello@swapaya.com">hello@swapaya.com</a>
+          <a href="mailto:safety@swapaya.com">safety@swapaya.com</a>
           <a href="/privacy/">Privacy policy</a>
           <a href="/terms/">Terms &amp; conditions</a>
           <a href="/delete-account/">Delete your account</a>
@@ -1908,6 +2013,19 @@ z"/></svg>ya</a>
 
 <script>
 /* ============================================================
+   STORE BUTTONS — the visitor's own store goes first and orange.
+   ============================================================ */
+(function(){
+  var ua = navigator.userAgent || '';
+  var os = /iPhone|iPad|iPod/.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1) ? 'ios'
+         : /Android/.test(ua) ? 'android' : '';
+  if (!os) return;
+  var mine = document.querySelector('.store-badge[data-store="' + os + '"]');
+  if (mine) { mine.classList.add('is-primary'); mine.parentNode.insertBefore(mine, mine.parentNode.firstChild); }
+  document.querySelectorAll('[data-store-link]').forEach(function(a){ if (mine) a.href = mine.href; });
+})();
+
+/* ============================================================
    WAITLIST — signups go to your own Supabase `waitlist` table.
    mode: 'supabase' | 'formspree' | 'demo'
    ============================================================ */
@@ -1921,7 +2039,7 @@ const WAITLIST = {
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const SHARE_URL = 'https://swapaya.com';
-const SHARE_TEXT = "I'm on the waitlist for Swapaya — swap the stuff you don't use for what you actually want, no cash needed. London first.";
+const SHARE_TEXT = "Swapaya — swap the stuff you don't use for stuff you actually want. No prices, no fees. Live on iPhone and Android.";
 
 const IC_SHARE = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>';
 const IC_LINK  = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.07 0l2.83-2.83a5 5 0 0 0-7.07-7.07l-1.4 1.41"/><path d="M14 11a5 5 0 0 0-7.07 0L4.1 13.83a5 5 0 0 0 7.07 7.07l1.4-1.41"/></svg>';
@@ -1995,7 +2113,7 @@ document.querySelectorAll('.wl-form').forEach(function(form){
     try {
       await submitEmail(payload);
       form.reset();
-      showMsg(form,'ok','<b>You’re in.</b> First swaps open September. Start eyeing up what you’ll list. Know someone with a cupboard full of stuff they never use? Send them our way.' + shareMarkup());
+      showMsg(form,'ok','<b>You’re in.</b> We’ll give you a shout when it’s busy near you. Until then, the app already works by post — get it for <a href="https://apps.apple.com/gb/app/swapaya/id6796486365" rel="noopener">iPhone</a> or <a href="https://play.google.com/store/apps/details?id=com.swapaya.app" rel="noopener">Android</a>.' + shareMarkup());
     } catch (err) {
       showMsg(form,'err','Couldn’t save that just now. Please try again in a moment.');
     } finally {
