@@ -176,7 +176,7 @@ header.site.scrolled{border-bottom-color:var(--line)}
 .team{margin-top:64px;text-align:center}
 .team-h{font-size:clamp(26px,3.8vw,36px);font-weight:800;margin-top:10px;color:var(--ink);text-wrap:balance}
 .team-lede{color:var(--body-ink);font-size:16.5px;max-width:52ch;margin:12px auto 0}
-.team-row{display:grid;grid-template-columns:repeat(2,minmax(0,380px));justify-content:center;gap:18px;margin-top:30px}
+.team-row{display:grid;grid-template-columns:repeat(2,minmax(0,420px));justify-content:center;gap:18px;margin-top:30px}
 .person{display:flex;flex-direction:column;gap:14px;text-align:left;background:var(--surface);border:1.5px solid var(--line);
   border-radius:var(--rc);padding:24px;transition:transform .18s,box-shadow .18s}
 .person:hover{transform:translateY(-4px);box-shadow:var(--shadow-card)}
@@ -185,7 +185,9 @@ header.site.scrolled{border-bottom-color:var(--line)}
   font-family:var(--head);font-weight:800;font-size:24px;flex:none}
 .person h3{font-size:19px;font-weight:800;color:var(--ink)}
 .person .role{font-size:13.5px;font-weight:600;color:var(--green);margin-top:2px}
-.person .bio{font-size:14.5px;line-height:1.6;color:var(--body-ink);flex:1}
+.person .bio{font-size:14.5px;line-height:1.6;color:var(--body-ink)}
+.person .li-btn{margin-top:auto}
+.team-close{font-family:var(--head);font-weight:800;font-size:clamp(18px,2.2vw,22px);color:var(--ink);max-width:40ch;margin:34px auto 0;text-wrap:balance}
 .li-btn{align-self:flex-start;display:inline-flex;align-items:center;gap:8px;padding:9px 16px;border-radius:999px;
   border:1.5px solid var(--green);color:var(--green);font-family:var(--head);font-weight:800;font-size:14px;text-decoration:none;
   transition:background .15s}
@@ -1383,22 +1385,24 @@ z"/></svg>ya</span>
     </div>
 
     <div class="team reveal">
-      <p class="eyebrow">Who's behind it</p>
-      <h2 class="team-h">Two founders. One very full cupboard.</h2>
-      <p class="team-lede">Swapaya is built and run from South East London by the two people who argued their way through every "what if we tried this?"</p>
+      <p class="eyebrow">The people behind Swapaya</p>
+      <h2 class="team-h">Two founders bringing product, technology and business together.</h2>
+      <p class="team-lede">Swapaya brought together Antoni's original vision for a swapping marketplace and Digvijay's experience building mobile products. Together, we've taken it from an idea into a working platform and are now focused on proving how swapping can work for real communities.</p>
       <div class="team-row">
         <article class="person">
-          <div class="person-top"><span class="av" aria-hidden="true">A</span><div><h3>Antoni Pullia</h3><p class="role">Co-founder &amp; CEO</p></div></div>
-          <p class="bio">Carried the idea of Swapaya for years before deciding to stop talking about it. Leads the concept, the brand and how we grow.</p>
-          <a class="li-btn" href="https://www.linkedin.com/in/antoni-p-b4b964110/" target="_blank" rel="noopener" aria-label="Antoni Pullia on LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5A2.5 2.5 0 1 1 5 8.5a2.5 2.5 0 0 1 0-5ZM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.76-2.05C20.4 8.65 21 11 21 14.1V21h-4v-6.1c0-1.45-.03-3.3-2-3.3s-2.32 1.57-2.32 3.2V21H9z"/></svg><span>Connect on LinkedIn</span></a>
+          <div class="person-top"><span class="av" aria-hidden="true">D</span><div><h3>Digvijay Singh</h3><p class="role">Co-founder &amp; CTO</p></div></div>
+          <p class="bio">Digvijay leads product and engineering at Swapaya. He took the platform from concept to working mobile product, shaping the user experience, architecture and technology behind listing, discovery, matching and swapping.</p>
+          <p class="bio">A University of Greenwich alumnus and experienced mobile engineer, he also works across product strategy and customer validation as Swapaya grows from an early-stage product into a real marketplace.</p>
+          <a class="li-btn" href="https://www.linkedin.com/in/digvijay-singh-2467a5110" target="_blank" rel="noopener" aria-label="Digvijay Singh on LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5A2.5 2.5 0 1 1 5 8.5a2.5 2.5 0 0 1 0-5ZM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.76-2.05C20.4 8.65 21 11 21 14.1V21h-4v-6.1c0-1.45-.03-3.3-2-3.3s-2.32 1.57-2.32 3.2V21H9z"/></svg><span>Connect with Digvijay on LinkedIn</span></a>
         </article>
         <article class="person">
-          <div class="person-top"><span class="av" aria-hidden="true">D</span><div><h3>Digvijay Singh</h3><p class="role">Co-founder &amp; CTO</p></div></div>
-          <p class="bio">Built the app, from the camera that writes your listing to the meet-up spots. Made the call, with Antoni, to keep prices out for good.</p>
-          <a class="li-btn" href="https://www.linkedin.com/in/digvijay-singh-2467a5110" target="_blank" rel="noopener" aria-label="Digvijay Singh on LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5A2.5 2.5 0 1 1 5 8.5a2.5 2.5 0 0 1 0-5ZM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.76-2.05C20.4 8.65 21 11 21 14.1V21h-4v-6.1c0-1.45-.03-3.3-2-3.3s-2.32 1.57-2.32 3.2V21H9z"/></svg><span>Connect on LinkedIn</span></a>
+          <div class="person-top"><span class="av" aria-hidden="true">A</span><div><h3>Antoni Pullia</h3><p class="role">Co-founder &amp; CEO</p></div></div>
+          <p class="bio">Antoni originated the idea behind Swapaya and leads its commercial direction, brand and partnerships. His focus is building the relationships and opportunities that can help Swapaya reach communities, validate the model and grow into a sustainable business.</p>
+          <a class="li-btn" href="https://www.linkedin.com/in/antoni-p-b4b964110/" target="_blank" rel="noopener" aria-label="Antoni Pullia on LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5A2.5 2.5 0 1 1 5 8.5a2.5 2.5 0 0 1 0-5ZM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.76-2.05C20.4 8.65 21 11 21 14.1V21h-4v-6.1c0-1.45-.03-3.3-2-3.3s-2.32 1.57-2.32 3.2V21H9z"/></svg><span>Connect with Antoni on LinkedIn</span></a>
         </article>
       </div>
-      <p class="team-note">Got an idea, a question, or a cupboard you want to talk about? <a href="mailto:hello@swapaya.com">hello@swapaya.com</a></p>
+      <p class="team-close">We're building Swapaya around a simple question: why buy something new when what you need may already be sitting unused nearby?</p>
+      <p class="team-note">Say hello: <a href="mailto:hello@swapaya.com">hello@swapaya.com</a></p>
     </div>
   </div>
 </section>
