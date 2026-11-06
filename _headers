@@ -1,0 +1,14 @@
+# Response headers for the site's static files on Cloudflare (worker/index.js sets its own for /i/*).
+#
+# The two .well-known files let the Swapaya app open https://swapaya.com/i/<id> links itself
+# (app repo: design/specs/30-share-links.md §8). They are pinned to the app, not the site:
+#   · apple-app-site-association → Apple team NGQB5RFQ46 + bundle com.swapaya.app
+#   · assetlinks.json            → SHA-256 of the Android signing certificates. It must include the
+#                                  Play App Signing key (Play Console → App integrity), or links from
+#                                  Play installs open this website instead of the app.
+# Changing the Android signing key or the Apple team means editing these files.
+# Apple requires application/json, and the AASA file has no extension to infer it from.
+/.well-known/apple-app-site-association
+  Content-Type: application/json
+/.well-known/assetlinks.json
+  Content-Type: application/json

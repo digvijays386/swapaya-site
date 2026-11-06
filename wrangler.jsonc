@@ -1,0 +1,38 @@
+// swapaya.com on Cloudflare Workers — the whole site is static assets, plus one script for /i/<id>.
+// App repo: design/specs/30-share-links.md §5 (why Workers, and the one-time DNS move).
+//
+// Deploys: Cloudflare Workers Builds is connected to this repo, so every push to main deploys
+// (build command: none; deploy command: npx wrangler deploy). Edit on GitHub as before.
+// "name" must match the Worker's name in the Cloudflare dashboard, or the build fails.
+{
+  "name": "swapaya-site",
+  "main": "worker/index.js",
+  "compatibility_date": "2026-10-01",
+
+  // The repo root IS the site, exactly as GitHub Pages served it. .assetsignore keeps this file,
+  // worker/ and the GitHub Pages leftovers from being published.
+  "assets": {
+    "directory": ".",
+    "binding": "ASSETS",
+    // /privacy → /privacy/ → privacy/index.html, the same URLs GitHub Pages served.
+    "html_handling": "auto-trailing-slash",
+    // A path that matches no file goes to worker/index.js (the /i/ page, or its small 404).
+    "not_found_handling": "none"
+  },
+
+  // Public values (the waitlist form in index.html already carries the same key), so they live
+  // here rather than in the dashboard, where a deploy would overwrite them.
+  "vars": {
+    "SUPABASE_URL": "https://vqjttnvrnijtopvxvxzo.supabase.co",
+    "SUPABASE_ANON_KEY": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZxanR0bnZybmlqdG9wdnh2eHpvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODE2ODQ4ODMsImV4cCI6MjA5NzI2MDg4M30.D71sjPh6zGrTQoVEoSpZiKSYYCNsYUi2zY4pQsEcx8M",
+    // "on" once Images → Transformations is enabled for swapaya.com (spec 30 §6.6).
+    "IMAGE_TRANSFORMS": "off"
+  },
+
+  // No request logs: the privacy policy says the link page keeps nothing beyond request counts.
+  "observability": { "enabled": false },
+
+  // <name>.<account>.workers.dev stays on, for checking a deploy before swapaya.com points here.
+  "workers_dev": true,
+  "preview_urls": true
+}

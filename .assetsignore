@@ -1,0 +1,16 @@
+# Files in this repo that are NOT part of the website. Cloudflare never uploads or serves them
+# (same syntax as .gitignore). Everything else in the repo root is published as-is.
+.assetsignore
+wrangler.jsonc
+worker/
+.git/
+.github/
+.gitignore
+.wrangler/
+node_modules/
+.idea/
+.DS_Store
+README.md
+# GitHub Pages leftovers, deleted once GitHub Pages is switched off.
+CNAME
+.nojekyll

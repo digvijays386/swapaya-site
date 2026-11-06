@@ -1,0 +1,10 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["NGQB5RFQ46.com.swapaya.app"],
+        "components": [{ "/": "/i/*", "comment": "Shared listings open in the Swapaya app (app repo: design/specs/30-share-links.md)" }]
+      }
+    ]
+  }
+}

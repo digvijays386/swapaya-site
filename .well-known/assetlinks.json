@@ -1,0 +1,13 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.swapaya.app",
+      "sha256_cert_fingerprints": [
+        "54:AD:C2:A0:B4:9E:15:AA:2F:BA:A8:87:39:8B:A1:46:EA:25:9F:9A:B6:CD:ED:B6:85:C4:C9:51:F1:43:B9:77",
+        "7A:39:B8:7F:8C:AB:F8:3E:3D:19:72:FF:BA:BC:73:09:FA:62:A9:3F:74:E8:E8:77:C2:A3:B0:78:B2:87:1F:DD"
+      ]
+    }
+  }
+]
